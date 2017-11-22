@@ -3,7 +3,7 @@ maintainer        'Chef Software, Inc.'
 maintainer_email  'cookbooks@chef.io'
 license           'Apache 2.0'
 description       'Installs and configures nginx'
-version           '2.7.8'
+version           '2.7.10'
 source_url        'https://github.com/FredHutch/nginx'
 
 recipe 'nginx',         'Installs nginx package and sets up configuration with Debian apache style with sites-enabled/sites-available'
@@ -12,7 +12,7 @@ recipe 'nginx::source', 'Installs nginx from source and sets up configuration wi
 depends 'apt',             '~> 2.0'
 depends 'bluepill',        '~> 2.3'
 depends 'build-essential', '~> 3.2'
-depends 'ohai',            '~> 3.0'
+depends 'ohai',            '~> 5.0'
 depends 'runit',           '~> 1.2'
 depends 'yum-epel',        '~> 0.3'
 
